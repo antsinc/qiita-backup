@@ -1,0 +1,34 @@
+# Qiita APIのアクセストークン
+access_token: <Qiita Access Token>
+
+# Qiita TeamのID、Teamじゃない時は空に
+team:  <Qiita Team ID>
+
+# QiitaのユーザーID
+user: <Qiita User ID>
+
+# データベース設定
+db:
+  production:
+    adapter: sqlite3 
+    database: dbfile.sqlite3
+
+# 画像を保存する場所のパス名
+image:
+  image_path: ./images
+
+# Google Driveにコンテンツを同期する時に以下を使う
+#gdrive:
+#  client_id: <Google API Client ID>
+#  client_secret: <Google API Client Secret>
+#  folder_name: qiita_backup
+
+# EverNoteにコンテンツを同期する時に以下を使う
+#evernote:
+#  consumer_key: <Evernote Cosumer Key>
+#  consumer_secret: <Evernote Consumer Secret>
+#  sandbox: false
+#  developer_token: <Evernote Developer Token>
+#  notebook: <Evernote notebook name>
+
+

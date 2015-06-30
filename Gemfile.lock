@@ -1,0 +1,146 @@
+GIT
+  remote: https://github.com/increments/qiita-markdown.git
+  revision: 9834ce6e4667f94c1ab1e21674f142e0848ec656
+  specs:
+    qiita-markdown (0.1.7)
+      activesupport
+      gemoji
+      github-linguist
+      html-pipeline
+      mem
+      pygments.rb
+      redcarpet
+      rugged (>= 0.21.1b2)
+      sanitize
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (4.1.8)
+      activesupport (= 4.1.8)
+      builder (~> 3.1)
+    activerecord (4.1.8)
+      activemodel (= 4.1.8)
+      activesupport (= 4.1.8)
+      arel (~> 5.0.0)
+    activesupport (4.1.8)
+      i18n (~> 0.6, >= 0.6.9)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.1)
+      tzinfo (~> 1.1)
+    addressable (2.3.6)
+    arel (5.0.1.20140414130214)
+    autoparse (0.3.3)
+      addressable (>= 2.3.1)
+      extlib (>= 0.9.15)
+      multi_json (>= 1.0.0)
+    builder (3.2.2)
+    charlock_holmes (0.7.3)
+    crass (0.2.1)
+    escape_utils (1.0.1)
+    evernote-thrift (1.25.1)
+    evernote_oauth (0.2.3)
+      evernote-thrift
+      oauth (>= 0.4.1)
+    extlib (0.9.16)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.9.1)
+      faraday (>= 0.7.4, < 0.10)
+    gemoji (2.1.0)
+    github-linguist (4.2.3)
+      charlock_holmes (~> 0.7.3)
+      escape_utils (~> 1.0.1)
+      mime-types (>= 1.19)
+      rugged (~> 0.22.0b4)
+    google-api-client (0.8.2)
+      activesupport (>= 3.2)
+      addressable (~> 2.3)
+      autoparse (~> 0.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      launchy (~> 2.4)
+      multi_json (~> 1.10)
+      retriable (~> 1.4)
+      signet (~> 0.6)
+    google_drive (1.0.0)
+      google-api-client (>= 0.7.0)
+      nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
+      oauth (>= 0.3.6)
+      oauth2 (>= 0.5.0)
+    html-pipeline (1.11.0)
+      activesupport (>= 2)
+      nokogiri (~> 1.4)
+    i18n (0.6.11)
+    json (1.8.1)
+    jwt (1.2.1)
+    launchy (2.4.3)
+      addressable (~> 2.3)
+    mem (0.1.5)
+    mime-types (2.4.3)
+    mini_portile (0.6.1)
+    minitest (5.4.3)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
+    nokogumbo (1.1.12)
+      nokogiri
+    oauth (0.4.7)
+    oauth2 (1.0.0)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
+    posix-spawn (0.3.9)
+    pygments.rb (0.6.0)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.1.0)
+    qiita (1.0.5)
+      activesupport
+      faraday (~> 0.9)
+      faraday_middleware
+      rack
+      rainbow
+      rouge
+      slop
+    rack (1.5.2)
+    rainbow (2.0.0)
+    rake (10.4.2)
+    redcarpet (3.2.2)
+    retriable (1.4.1)
+    rouge (1.7.4)
+    rugged (0.22.0b4)
+    sanitize (3.0.4)
+      crass (~> 0.2.0)
+      nokogiri (>= 1.4.4)
+      nokogumbo (= 1.1.12)
+    signet (0.6.0)
+      addressable (~> 2.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      jwt (~> 1.0)
+      multi_json (~> 1.10)
+    slop (3.6.0)
+    sqlite3 (1.3.7)
+    string-scrub (0.0.5)
+    thread_safe (0.3.4)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    yajl-ruby (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activerecord
+  evernote_oauth
+  google_drive (~> 1.0.0)
+  qiita
+  qiita-markdown!
+  rake
+  sqlite3
+  string-scrub

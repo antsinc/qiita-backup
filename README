@@ -1,0 +1,54 @@
+Qiita backup script
+
+Copyright (c) 2015 ants Inc.
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+
+
+# これは何
+Qiita()の文章をチームもしくは外部に共有しつつ、
+自前の環境にも保存するため使用するスクリプトです。
+Qiita Teamの文章も対応してます。
+
+
+# セットアップの仕方
+
+## Setup required components
+It is case for CentOS 6.
+
+```
+sudo yum install libicu-devel cmake ruby-devel rubygem patch
+```
+
+## ユーザーの環境設定
+以下の項目を追加する。
+この辺り詳しくないので、詳しい人は教えてくれると嬉しいです。
+
+```.gemrc
+gem: "--user-install"
+```
+
+
+## 必要なgemパッケージのインストール
+```
+gem install bundler
+cd qiita-utility/
+bundle install --path ~/.gem
+```
+
+## 設定
+```
+cp config.yml.original config.yml
+vim config.yml
+```
+
+## データベースの準備
+```
+rake ENV=production
+```
+
+# 実行
+```
+ENV=production ruby qiita-backup.rb 
+```
+
